@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75839e36-a0ee-43b8-b667-3bb8f0f72e51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/kafka/consumer/RentalConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/kafka/consumer/RentalConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices-t2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/maintenance/MaintenanceCompletedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/maintenance/MaintenanceCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/maintenance/MaintenanceDeletedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/kafka/consumer/MaintenanceConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/kafka/consumer/MaintenanceConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/MaintenanceServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/api/clients/CarClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/api/clients/CarClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/api/controller/MaintenanceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/abstracts/MaintenanceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/concretes/MaintenanceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/dto/requests/CreateMaintenanceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/dto/requests/UpdateMaintenanceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/dto/responses/CreateMaintenanceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/dto/responses/GetAllMaintenancesResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/dto/responses/GetMaintenanceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/dto/responses/UpdateMaintenanceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/business/rules/MaintenanceBusinessRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/entity/Maintenance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/kodlama/io/maintenanceservice/repository/MaintenanceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maintenance-service/src/test/java/kodlama/io/maintenanceservice/MaintenanceServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Paths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +67,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -64,13 +91,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/turkcellbootcamp2/microservices-t2",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "C:/turkcellbootcamp2/deneme",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "terminal",
-    "spring.configuration.checksum": "d13fb3f96c466a244bb5f7b04e7d2d48",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "ea5f1a83205e1cf5bbee2a688715be52",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -84,16 +114,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="kodlama.io.maintenanceservice.business.dto.requests" />
+      <recent name="kodlama.io.maintenanceservice.business.dto.responses" />
       <recent name="com.kodlamaio.rentalservice.business.dto.responses" />
       <recent name="com.kodlamaio.rentalservice.business.dto.respabstracts" />
       <recent name="com.kodlamaio.rentalservice.business.abstracts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\turkcellbootcamp2\microservices-t2\maintenance-service\src\main\java\kodlama\io\maintenanceservice\api\clients" />
       <recent name="C:\turkcellbootcamp2\microservices-t2\common-package\src\main\java\com\kodlamaio\commonpackage" />
       <recent name="C:\turkcellbootcamp2\microservices-t2\rental-service\src\main\java\com\kodlamaio\rentalservice\business" />
       <recent name="C:\turkcellbootcamp2\microservices-t2\filter-service\src\main\java\com\kodlamaio\filterservice" />
       <recent name="C:\turkcellbootcamp2\microservices-t2\inventory-service\src\main\java\com\kodlamaio\inventoryservice\business\rules" />
-      <recent name="C:\turkcellbootcamp2\microservices-t2\common-package\src\main\java\com\kodlamaio\commonpackage\utils\annotations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\turkcellbootcamp2\microservices-t2" />
@@ -101,11 +133,11 @@
       <recent name="C:\turkcellbootcamp2\microservices-t2\.idea" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kodlamaio.inventoryservice.business.kafka.consumer" />
       <recent name="com.kodlamaio.rentalservice.business.abstracts" />
       <recent name="com.kodlamaio.rentalservice.business.dto.requests" />
       <recent name="com.kodlamaio.inventoryservice.api.controllers" />
       <recent name="com.kodlamaio.inventoryservice.business.concretes" />
-      <recent name="com.kodlamaio.inventoryservice.business.abstracts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,6 +248,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MaintenanceServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="maintenance-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kodlama.io.maintenanceservice.MaintenanceServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RentalServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="rental-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kodlamaio.rentalservice.RentalServiceApplication" />
@@ -244,7 +283,16 @@
       <workItem from="1684514567034" duration="3110000" />
       <workItem from="1684517878077" duration="2649000" />
       <workItem from="1684521693781" duration="19000" />
-      <workItem from="1684525459395" duration="138000" />
+      <workItem from="1684525459395" duration="2523000" />
+      <workItem from="1684528091348" duration="174000" />
+      <workItem from="1684528298063" duration="612000" />
+      <workItem from="1684528938820" duration="1504000" />
+      <workItem from="1684530831312" duration="118000" />
+      <workItem from="1684577266996" duration="2510000" />
+      <workItem from="1684579798164" duration="669000" />
+      <workItem from="1684581124240" duration="18664000" />
+      <workItem from="1684678690208" duration="10718000" />
+      <workItem from="1684763156136" duration="71000" />
     </task>
     <servers />
   </component>
