@@ -1,10 +1,10 @@
 spring:
   application:
-    name: maintenance-service
+    name: payment-service
   datasource:
     username: postgres
     password: '12345'
-    url: jdbc:postgresql://localhost:5432/maintenancedb-t2
+    url: jdbc:postgresql://localhost:5432/paymentdb-t2
   jpa:
     properties:
       hibernate:
@@ -29,12 +29,5 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${random.value}
     prefer-ip-address: true
-
-resilience4j:
-  retry:
-    instances:
-      retry-maintenance:
-        max-attempts: 5
-        wait-duration: 15s
 server:
   port: 0
