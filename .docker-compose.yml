@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  kafka:
+    container_name: kafka-t2
+    image: bashj79/kafka-kraft
+    ports:
+      - "9092:9092"
+    volumes:
+      - kafka_data:/opt/kafka/kafka-logs
+
+
+  mongodb:
+    container_name: turkcell2-filterdb
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  maintenancedb:
+    container_name: maintenancedb-t2
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345
+      - MYSQL_TCP_PORT=3306
+      - VIRTUAL_PORT=3306
+    volumes:
+      - maintenancedb_data:/data/db
+
+
+  paymentdb:
+    container_name: paymentdb-t2
+    image: mysql
+    ports:
+      - "3307:3307"
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345
+      - MYSQL_TCP_PORT=3307
+      - VIRTUAL_PORT=3307
+    volumes:
+      - paymentdb_data:/data/db
+
+volumes:
+  kafka_data:
+  mongodb_data:
+  maintenancedb_data:
+  paymentdb_data:
